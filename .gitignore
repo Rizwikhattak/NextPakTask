@@ -26,3 +26,9 @@ dist-ssr
 apphosting.local.yaml
 
 .vercel
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.*   # This ignores all env files with any suffix
