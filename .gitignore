@@ -7,10 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node.js dependencies
 node_modules
+package-lock.json
+yarn.lock
+
+# Build files
 dist
 dist-ssr
-*.local
+out
+.next
+.vite
+.vitepress/
+.vercel/output
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.*   # This ignores all env files with any suffix
+
+# Firebase and Vercel configurations
+.firebase/
+.vercel/
+firebase.json
+firestore.rules
+firestore.indexes.json
+storage.rules
+remoteconfig.template.json
 
 # Editor directories and files
 .vscode/*
@@ -23,12 +48,29 @@ dist-ssr
 *.sln
 *.sw?
 
-apphosting.local.yaml
+# Cache files
+.cache/
+*.cache
+*.swp
+*.swo
+*.swn
 
-.vercel
-# Environment Variables
-.env
-.env.local
-.env.development
-.env.production
-.env.*   # This ignores all env files with any suffix
+# Git-related files
+.git/
+.gitignore
+.gitattributes
+
+# Config files
+apphosting.local.yaml
+apphosting.yaml
+database.rules.json
+postcss.config.js
+tailwind.config.js
+eslint.config.js
+jsconfig.json
+tsconfig.json
+vercel.json
+vite.config.js
+
+# Misc
+coverage/

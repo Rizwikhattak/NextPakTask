@@ -5,11 +5,12 @@ import LoginPage from "./Components/Authentication/LoginPage";
 import SignUpPage from "./Components/Authentication/SignUpPage";
 import MainPage from "./Components/Main App Page/MainPage";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import Sidebar from "./Sidebar";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Sidebar />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route
